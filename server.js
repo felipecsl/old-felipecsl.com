@@ -20,6 +20,14 @@ server.set('view options', {
 
 server.listen(3000);
 
+server.configure('development', function(){
+  server.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+});
+
+server.configure('production', function(){
+  server.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+});
+
 var nowjs = require("now");
 var everyone = nowjs.initialize(server);
 
