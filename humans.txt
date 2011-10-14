@@ -1,0 +1,17 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Felipe Lima
+  Site: http://felipel.com
+  Twitter: felipecsl
+  Location: Porto Alegre/Brazil
+
+/* THANKS */
+  Names (& URL): HTML5 Bolierplate (Paul Irish)
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software: Photoshop, MacVim, Chrome
