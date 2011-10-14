@@ -2,7 +2,7 @@
   "name": "felipecsl-com",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.2.0"
+    "express": "2.2.0",
     "now": "0.7.5",
     "jade": "0.16.2"
   }
