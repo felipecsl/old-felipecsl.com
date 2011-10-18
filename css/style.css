@@ -116,7 +116,7 @@ footer { position: absolute; bottom: 20px; left: 2px; right: 1px; }
 .tab.active-prev { border-right:0 none;}
 .new-file { margin-top: 11px; margin-left: 3px;}
 address { font-style: normal;}
-.hresume, header { padding: 0 20px 0 55px; }
+#resume, #projects, #blog { padding: 0 20px 0 55px; }
 .given-name { display: block; font-weight: bold; }
 .family-name { display: none; }
 .adr { display: block; }
@@ -124,6 +124,8 @@ address { font-style: normal;}
 .line-numbers { font-family: Monaco, Consolas, 'Courier New'; background-color: #b9b9f5; color: #2b2b2b; position: absolute; left: 1px; width: 20px; height: 830px; padding: 0 5px; text-align: center; font-size: 14px; line-height: 20px;overflow: hidden; }
 .statusbar { background-color: #ddd9d4; color: #232323;font-family: Menlo, Monaco, Consolas, Courier New; font-size: 12px; padding: 3px 1px; font-weight: bold;}
 .summary, .contact-info { padding-left: 10px; }
+#projects, #blog { display: none;}
+.command-input{ position: absolute; bottom: 2px; background-color: transparent; border: 0 none; width: 600px; color: white; font-family: Menlo, Monaco, Consolas, Courier New; outline: none; padding: 0 6px;}
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
