@@ -10,6 +10,8 @@ var server = express.createServer()
   .use('/js', express.static(__dirname + '/js'))
   .use(express.bodyParser())
 
+server.set('view options', { pretty: true });
+
 server.get('/', function(req, res){
   res.render('index.jade');
 });
@@ -20,14 +22,6 @@ server.set('view options', {
 
 var port = process.env.PORT || 3000;
 server.listen(port);
-
-server.configure('development', function(){
-  server.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-});
-
-server.configure('production', function(){
-  server.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-});
 
 var nowjs = require("now");
 var everyone = nowjs.initialize(server);

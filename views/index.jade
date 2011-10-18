@@ -3,7 +3,7 @@ html.no-js(lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-    title Resume
+    title Felipe Lima
     meta(name='description', content='Felipe Lima\'s Resume')
     meta(name='author', content='Felipe Lima')
     meta(name='viewport', content='width=device-width,initial-scale=1')
@@ -95,7 +95,7 @@ html.no-js(lang='en')
               li.experience.vevent
                 span.summary Software Designer
                 | ,
-                span.location HP Brazil R&D
+                span.location HP Brazil R&amp;D
                 | ,
                 abbr.dtstart(title='2003-08-01') Aug 2003
                 | -
@@ -137,6 +137,7 @@ html.no-js(lang='en')
       //! end of #wrapper
       footer
         .statusbar resume.html[master][ruby-1.9.2-p136]
+      input(type='text', class='command-input') /
     //! end of #container
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')
     script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js')
@@ -148,7 +149,7 @@ html.no-js(lang='en')
     script(defer='defer', src='js/script.js')
     // end scripts
     script
-      window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+      window._gaq = [['_setAccount','UA-26310657-1'],['_trackPageview'],['_trackPageLoadTime']];
       Modernizr.load({
         load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
       });

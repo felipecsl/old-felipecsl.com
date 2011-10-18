@@ -109,10 +109,11 @@ h1, h2, h3, h4, p, ul, ol { margin: 0;}
 #content {font-size: 14px; line-height: 20px;  }
 footer { position: absolute; bottom: 20px; left: 2px; right: 1px; }
 .filename { cursor: default; text-align: center; color: #303030; text-shadow: 0 1px 1px white; font-family:Lucida Grande, Lucida Sans Unicode, sans; font-size: 13px; position: relative; top: 3px;}
-.tab { border-right: 1px solid #686868; width: 133px; height: 22px; cursor: default; color: #303030; text-shadow: 0 1px 1px #DDD; font-family: Lucida Grande, Lucida Sans Unicode, sans; font-size: 11px; float: left; margin-top: 6px; font-weight: bold; text-align: center; line-height: 21px; position: relative; }
-.tab img { position: absolute; top: 5px; left: 4px;}
+.tab { border-right: 1px solid #686868; width: 133px; height: 22px; cursor: default; color: #303030; text-shadow: 0 1px 1px #DDD; font-family: Lucida Grande, Lucida Sans Unicode, sans; font-size: 11px; float: left; margin-top: 6px; font-weight: bold; text-align: center; line-height: 20px; position: relative; }
+.tab img { position: absolute; top: 4px; left: 6px;}
 .tab:first-child { margin-left: 12px; text-indent: 15px;}
-.tab.active { background: url(../img/tab.png) no-repeat; border-right: 1px solid transparent; }
+.tab.active { background: url(../img/tab.png) no-repeat; border-right: 1px solid transparent; line-height: 18px;}
+.tab.active-prev { border-right:0 none;}
 .new-file { margin-top: 11px; margin-left: 3px;}
 address { font-style: normal;}
 .hresume, header { padding: 0 20px 0 55px; }
@@ -123,16 +124,6 @@ address { font-style: normal;}
 .line-numbers { font-family: Monaco, Consolas, 'Courier New'; background-color: #b9b9f5; color: #2b2b2b; position: absolute; left: 1px; width: 20px; height: 830px; padding: 0 5px; text-align: center; font-size: 14px; line-height: 20px;overflow: hidden; }
 .statusbar { background-color: #ddd9d4; color: #232323;font-family: Menlo, Monaco, Consolas, Courier New; font-size: 12px; padding: 3px 1px; font-weight: bold;}
 .summary, .contact-info { padding-left: 10px; }
-
-
-
-
-
-
-
-
-
-
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
