@@ -3,8 +3,15 @@
 */
 
 $(function() {
-  $("#container").draggable({ handle: ".filename"});
-  $("#container").resizable();
+  $("#container")
+    .draggable({ handle: ".filename"})
+    .resizable()
+    .css({ 
+      'left': '50%', 
+      'margin-left': - ($("#container").width() / 2),
+      'margin-top': '20px'
+    });
+
   $(".tab").click(function() {
     var elem = $(this);
     if(elem.hasClass("active")) return;
@@ -36,7 +43,6 @@ $(function() {
 });
 
 now.ready(function(){
-  //now.logStuff("Teu CU!");
 });
 
 function changeTab(name) {

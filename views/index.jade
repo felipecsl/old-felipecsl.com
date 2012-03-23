@@ -15,23 +15,24 @@ html.no-js(lang='en')
   body
     #container
       .window-header
-        .filename resume.html + (~/Projects/felipecsl.github.com) - VIM
+        .filename resume.html + (~/Projects/felipecsl.com) - VIM
         .tabs
           .tab.active
             img(src='img/close.png')
             span resume.html
-          .tab
-            img(src='img/close.png')
-            span projects.html
-          .tab
-            img(src='img/close.png')
-            span blog.html
-          img(src='img/new.png', class='new-file')
+          //
+            .tab
+              img(src='img/close.png')
+              span projects.html
+            .tab
+              img(src='img/close.png')
+              span blog.html
+            img(src='img/new.png', class='new-file')
       #wrapper
         #content
           .line-numbers
             | 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
-            | 31 32 33 34 35 36 37 38 39 40 41
+            | 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48
           #projects
             h2 Projects
           #blog
@@ -45,20 +46,33 @@ html.no-js(lang='en')
                   span.family-name Felipe Correa de Souza Lima
                 p.contact-info
                   span.adr
-                    span.street-address Rua Demétrio Ribeiro 680/401
-                    span.locality Porto Alegre
-                    | ,
-                    span.region RS
-                    span.postal-code 90010-312
+                    span.hidden.street-address 1188 Filbert St. #5
+                    span.hidden.locality San Francisco
+                    span.hidden.region CA
+                    span.hidden.postal-code 94123
                   span
                     | Email:
                     a.email(href='mailto:felipe.lima@gmail.com') felipe.lima@gmail.com
+                  br
                   span
                     | Homepage:
-                    a.url(href='http://felipel.com/') felipel.com
+                    a.url(href='http://felipecsl.com/') felipecsl.com
+                  br
+                  br
                   span
-                    | Phone:
-                    span.tel +55 (51) 9967-7800
+                    a.url(href='http://github.com/felipecsl') GitHub
+                  br
+                  span
+                    a.url(href='http://twitter.com/felipecsl') Twitter
+                  br
+                  span
+                    a.url(href='http://coderwall.com/felipecsl') CoderWall
+                  br
+                  span
+                    a.url(href='http://www.linkedin.com/in/felipecsl') Linkedin
+                  br
+                  span
+                    span.hidden.tel +1 (415) 815-7116
             #main.hresume(role='main')
               h2 Summary
               p.summary
@@ -73,28 +87,36 @@ html.no-js(lang='en')
               ol.vcalendar
                 li.education.vevent
                   a.url.summary(href='http://pucrs.br/') PUCRS
-                  | - BS Computer Science
+                  |  - BS Computer Science
                   | (
-                  abbr.dtstart(title='2002-01-01') 2002
+                  abbr.dtstart(title='2002-01-01') 2002 
                   | -
                   abbr.dtend(title='2008-08-15') 2008
-                  | )
+                  |  )
               h2 Work Experience
               ol.vcalendar
+                li.experience.vevent
+                  span.summary Senior Software Engineer
+                  | ,
+                  span.location Gogobot
+                  | ,
+                  abbr.dtstart(title='2012-01-01') Jan 2011 
+                  | -
+                  abbr(title='2011-01-01') present
                 li.experience.vevent
                   span.summary Senior Development Consultant
                   | ,
                   span.location ThoughtWorks Brazil
                   | ,
-                  abbr.dtstart(title='2011-01-01') Jan 2011
+                  abbr.dtstart(title='2011-01-01') Jan 2011 
                   | -
-                  abbr(title='2011-01-01') present
+                  abbr(title='2011-12-01') Dec 2011
                 li.experience.vevent
-                  span.summary Owner and Project Manager
+                  span.summary Co-founder and Project Manager
                   | ,
                   span.location Quavio
                   | ,
-                  abbr.dtstart(title='2009-10-01') Sept 2009
+                  abbr.dtstart(title='2009-10-01') Sept 2009 
                   | -
                   abbr(title='2010-12-31') Dec 2010
                 li.experience.vevent
@@ -102,7 +124,7 @@ html.no-js(lang='en')
                   | ,
                   span.location HP Brazil R&amp;D
                   | ,
-                  abbr.dtstart(title='2003-08-01') Aug 2003
+                  abbr.dtstart(title='2003-08-01') Aug 2003  
                   | -
                   abbr(title='2009-08-25') Aug 2009
                 li.experience.vevent
@@ -110,7 +132,7 @@ html.no-js(lang='en')
                   | ,
                   span.location CPTS
                   | ,
-                  abbr.dtstart(title='2002-08-01') Aug 2002
+                  abbr.dtstart(title='2002-08-01') Aug 2002 
                   | -
                   abbr(title='2003-08-01') Aug 2003
               h2 Skills
@@ -141,7 +163,7 @@ html.no-js(lang='en')
         //! end of #content
       //! end of #wrapper
       footer
-        .statusbar resume.html[master][ruby-1.9.2-p136]
+        .statusbar resume.html[master][ruby-1.9.3-p0]
       input(type='text', class='command-input') /
     //! end of #container
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')
