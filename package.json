@@ -4,6 +4,7 @@
   "dependencies": {
     "express": "2.2.0",
     "now": "0.7.5",
-    "jade": "0.16.2"
+    "jade": "0.16.2",
+    "zlib": "1.0.5"
   }
 }
