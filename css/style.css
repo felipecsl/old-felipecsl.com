@@ -1,4 +1,4 @@
-/* HTML5 ✰ Boilerplate
+  /* HTML5 ✰ Boilerplate
  * ==|== normalize ==========================================================
  */
 
@@ -77,7 +77,7 @@ h1, h2, h3, h4, p, ul, ol { margin: 0;}
 
 #container {
   position: absolute;
-  height: 600px;
+  height: 90%;
   width: 80%;
   box-shadow: 0 20px 70px #000;
   -moz-box-shadow: 0 20px 70px #000;
@@ -121,7 +121,7 @@ address { font-style: normal;}
 .family-name { display: none; }
 .adr { display: block; }
 .avatar { float: right; width: 120px; border: 5px solid #444; margin: 10px 0 30px 20px;}
-.line-numbers { font-family: Monaco, Consolas, 'Courier New'; background-color: #b9b9f5; color: #2b2b2b; position: absolute; left: 1px; width: 20px; height: 942px; padding: 0 5px; text-align: center; font-size: 14px; line-height: 20px;overflow: hidden; }
+.line-numbers { font-family: Monaco, Consolas, 'Courier New'; background-color: #b9b9f5; color: #2b2b2b; position: absolute; left: 1px; width: 20px; height: 1005px; padding: 0 5px; text-align: center; font-size: 14px; line-height: 20px;overflow: hidden; }
 .statusbar { background-color: #ddd9d4; color: #232323;font-family: Menlo, Monaco, Consolas, Courier New; font-size: 12px; padding: 3px 1px; font-weight: bold;}
 .summary, .contact-info { padding-left: 10px; }
 #projects, #blog { display: none;}

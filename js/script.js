@@ -12,6 +12,18 @@ $(function() {
       'margin-top': '20px'
     });
 
+  var resizeTimeout = null;
+
+  $(window).resize(function() {
+    if(resizeTimeout) clearTimeout(resizeTimeout);
+
+    resizeTimeout = setTimeout(function() {
+      $("#container").animate({ 
+        'margin-left': - ($("#container").width() / 2) 
+      }, 500);
+    }, 500);
+  });
+
   $(".tab").click(function() {
     var elem = $(this);
     if(elem.hasClass("active")) return;
