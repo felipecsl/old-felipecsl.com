@@ -10,6 +10,7 @@ html.no-js(lang='en')
     link(rel='stylesheet', href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css')
     link(rel='stylesheet', href='css/bootstrap.css')
     link(rel='stylesheet', href='css/bootstrap-responsive.css')
+    link(rel='stylesheet', href='css/projects.css')
     script(src='js/libs/modernizr-2.0.6.min.js')
   body
     .container
@@ -17,40 +18,45 @@ html.no-js(lang='en')
         h1 
           | Projects
           small Some of the stuff that I've been working on:
-      .row
-        .span6
-          h2 Noite Hoje
-          p This is a pet project that grew up as a website among some friends that love technology, concerts and partying. Backend with Ruby. Mobile clients are available for iOS and Android.
-          .btn-group
-            .button.btn.btn-info More info
-            button.btn.btn-info.dropdown-toggle(data-toggle="dropdown")
-              span.caret
-            ul.dropdown-menu
-              li
-                a(href="http://noitehoje.com.br", target='_blank') Visit the Website
-              li
-                a(href="http://itunes.apple.com/app/id438148148", target='_blank') Download the iPhone App
-              li
-                a(href="https://play.google.com/store/apps/details?id=net.amdroid.noitehoje", target='_blank') Download the Android App
-        .span6
-          h2 Wombat
-          p Wombat is a generic, multipurpose web crawler/scraper with a DSL that parses structured data from web pages. It is writtend in Ruby and fully tested with Rspec.
-          a.btn(href="http://felipecsl.github.com/wombat", target="_blank") 
-            i.icon-cog
-            | &nbsp;View project on GitHub
-      .row
-        .span6
-          h2 Random maze generator and solver
-          p This is a sample JavaScript app that generates random mazes and is able to find the shortest path out of it. It is also fully tested with Jasmine and employs some well known graph theory algorithms like depth-first search and A* search.
-          a.btn(href="http://felipecsl.github.com/random-maze-generator", target="_blank") 
-            i.icon-cog
-            | &nbsp;View project on GitHub
-        .span6
-          h2 CS-Exercises
-          p This is a growing collection of traditional Computer Science problems/questions that are popular in interview questions and exercise some CS concepts and fundamentals.
-          a.btn(href="http://github.com/felipecsl/cs-exercises", target="_blank") 
-            i.icon-cog
-            | &nbsp;View project on GitHub
+      iframe.follow(src="http://markdotto.github.com/github-buttons/github-btn.html?user=felipecsl&amp;type=follow&amp;count=true&amp;", allowtransparency="true", frameborder="0", scrolling="0", width="146px", height="30px")
+      section.projects
+        .row
+          .span6
+            h2 Noite Hoje
+            p This is a pet project that grew up as a website among some friends that love technology, concerts and partying. Backend with Ruby. Mobile clients are available for iOS and Android.
+            .btn-group
+              .button.btn.btn-info More info
+              button.btn.btn-info.dropdown-toggle(data-toggle="dropdown")
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href="http://noitehoje.com.br", target='_blank') Visit the Website
+                li
+                  a(href="http://itunes.apple.com/app/id438148148", target='_blank') Download the iPhone App
+                li
+                  a(href="https://play.google.com/store/apps/details?id=net.amdroid.noitehoje", target='_blank') Download the Android App
+          .span6
+            h2 Wombat
+            p Wombat is a generic, multipurpose web crawler/scraper with a DSL that parses structured data from web pages. It is writtend in Ruby and fully tested with Rspec.
+            a.btn(href="http://felipecsl.github.com/wombat", target="_blank") 
+              i.icon-cog
+              | &nbsp;View project on GitHub
+            .nudge-top
+              iframe(src="http://markdotto.github.com/github-buttons/github-btn.html?user=felipecsl&amp;repo=wombat&amp;type=watch&amp;count=true&amp;", allowtransparency="true", frameborder="0", scrolling="0", width="100px", height="20px")
+              iframe(src="http://markdotto.github.com/github-buttons/github-btn.html?user=felipecsl&amp;repo=wombat&amp;type=fork&amp;count=true&amp;", allowtransparency="true", frameborder="0", scrolling="0", width="100px", height="20px")
+        .row.row2
+          .span6
+            h2 Random maze generator and solver
+            p This is a sample JavaScript app that generates random mazes and is able to find the shortest path out of it. It is also fully tested with Jasmine and employs some well known graph theory algorithms like depth-first search and A* search.
+            a.btn(href="http://felipecsl.github.com/random-maze-generator", target="_blank") 
+              i.icon-cog
+              | &nbsp;View project on GitHub
+          .span6
+            h2 CS-Exercises
+            p This is a growing collection of traditional Computer Science problems/questions that are popular in interview questions and exercise some CS concepts and fundamentals.
+            a.btn(href="http://github.com/felipecsl/cs-exercises", target="_blank") 
+              i.icon-cog
+              | &nbsp;View project on GitHub
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
     script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js')
     script(src='nowjs/now.js')
