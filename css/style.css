@@ -62,7 +62,7 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author:
+   Author: Felipe Lima
    ========================================================================== */
 body {
   font-family: Menlo, Monaco, Consolas, Courier New;
@@ -75,7 +75,7 @@ h1, h2, h3, h4, .given-name { color: #c44436; font-size: 1em; line-height: 60px;
 
 h1, h2, h3, h4, p, ul, ol { margin: 0;}
 
-#container {
+.container {
   position: absolute;
   height: 90%;
   width: 80%;
@@ -83,19 +83,65 @@ h1, h2, h3, h4, p, ul, ol { margin: 0;}
   -moz-box-shadow: 0 20px 70px #000;
   border-radius: 5px;
   -moz-border-radius: 5px;
-  background-color: #232323;
 }
-#container .window-header {
-  background:
-    url(../img/top-left.png) top left no-repeat,
-    url(../img/top-right.png) top right no-repeat,
-    url(../img/header.png) repeat-x;
+.container .window-header {
   border-top: 1px solid #a0a0a0;
   border-left: 1px solid #a0a0a0;
   border-right: 1px solid #a0a0a0;
   border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
+}
+.vim {
+  background-color: #232323;
+}
+.vim .window-header {
   height: 44px;
+  background:
+    url(../img/top-left.png) top left no-repeat,
+    url(../img/top-right.png) top right no-repeat,
+    url(../img/header.png) repeat-x;
+}
+.chrome {
+  background-color: white;
+}
+.chrome .window-header {
+  border-bottom: 1px solid #888;
+  height: 71px;
+  background:
+    url(../img/chrome-top-left.png) top left no-repeat,
+    url(../img/chrome-top-right.png) top right no-repeat,
+    url(../img/chrome-header.png) repeat-x; 
+}
+.chrome .window-header .filename {
+  height: 33px;
+  position: absolute;
+  width: 100%;
+  color: black;
+  font-size: 11px;
+  font-family: lucida grande;
+  padding-top: 17px;
+  padding-left: 100px;
+}
+.chrome .window-header .form-wrapper {
+  margin-top: 45px;
+  padding-left: 145px;
+  padding-right: 40px;
+}
+.chrome .browser-content iframe {
+  border: 0 none;
+  height: 600px;
+}
+.chrome .window-header form {
+  width: 100%;
+}
+.chrome .window-header form .search-box {
+  border: 0 none;
+  height: 16px;
+  width: 100%;
+  display: block;
+  font-family: lucida grande, sans-serif;
+  font-size: 13px;
+  outline: none;
 }
 #wrapper {
   overflow: auto;
@@ -108,7 +154,7 @@ h1, h2, h3, h4, p, ul, ol { margin: 0;}
 }
 #content {font-size: 14px; line-height: 20px;  }
 footer { position: absolute; bottom: 20px; left: 2px; right: 1px; }
-.filename { cursor: default; text-align: center; color: #303030; text-shadow: 0 1px 1px white; font-family:Lucida Grande, Lucida Sans Unicode, sans; font-size: 13px; position: relative; top: 3px;}
+.vim .filename { cursor: default; text-align: center; color: #303030; text-shadow: 0 1px 1px white; font-family:Lucida Grande, Lucida Sans Unicode, sans; font-size: 13px; position: relative; top: 3px;}
 .tab { border-right: 1px solid #686868; width: 133px; height: 22px; cursor: default; color: #303030; text-shadow: 0 1px 1px #DDD; font-family: Lucida Grande, Lucida Sans Unicode, sans; font-size: 11px; float: left; margin-top: 6px; font-weight: bold; text-align: center; line-height: 20px; position: relative; }
 .tab img { position: absolute; top: 4px; left: 6px;}
 .tab:first-child { margin-left: 12px; text-indent: 15px;}
@@ -121,7 +167,7 @@ address { font-style: normal;}
 .family-name { display: none; }
 .adr { display: block; }
 .avatar { float: right; width: 120px; border: 5px solid #444; margin: 10px 0 30px 20px;}
-.line-numbers { font-family: Monaco, Consolas, 'Courier New'; background-color: #b9b9f5; color: #2b2b2b; position: absolute; left: 1px; width: 20px; height: 1005px; padding: 0 5px; text-align: center; font-size: 14px; line-height: 20px;overflow: hidden; }
+.line-numbers { font-family: Monaco, Consolas, 'Courier New'; background-color: #b9b9f5; color: #2b2b2b; position: absolute; left: 1px; width: 20px; height: 1020px; padding: 0 5px; text-align: center; font-size: 14px; line-height: 20px;overflow: hidden; }
 .statusbar { background-color: #ddd9d4; color: #232323;font-family: Menlo, Monaco, Consolas, Courier New; font-size: 12px; padding: 3px 1px; font-weight: bold;}
 .summary, .contact-info { padding-left: 10px; }
 #projects, #blog { display: none;}

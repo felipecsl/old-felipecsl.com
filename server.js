@@ -16,6 +16,10 @@ server.get('/', function(req, res){
   res.render('index.jade');
 });
 
+server.get('/projects', function(req, res){
+  res.render('projects.jade');
+});
+
 server.set('view options', {
   layout: false
 });

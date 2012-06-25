@@ -1,0 +1,67 @@
+!!! 5
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title Felipe Lima
+    meta(name='description', content='Felipe Lima\'s Projects')
+    meta(name='author', content='Felipe Lima')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    link(rel='stylesheet', href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css')
+    link(rel='stylesheet', href='css/bootstrap.css')
+    link(rel='stylesheet', href='css/bootstrap-responsive.css')
+    script(src='js/libs/modernizr-2.0.6.min.js')
+  body
+    .container
+      .page-header
+        h1 
+          | Projects
+          small Some of the stuff that I've been working on:
+      .row
+        .span6
+          h2 Noite Hoje
+          p This is a pet project that grew up as a website among some friends that love technology, concerts and partying. Backend with Ruby. Mobile clients are available for iOS and Android.
+          .btn-group
+            .button.btn.btn-info More info
+            button.btn.btn-info.dropdown-toggle(data-toggle="dropdown")
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href="http://noitehoje.com.br", target='_blank') Visit the Website
+              li
+                a(href="http://itunes.apple.com/app/id438148148", target='_blank') Download the iPhone App
+              li
+                a(href="https://play.google.com/store/apps/details?id=net.amdroid.noitehoje", target='_blank') Download the Android App
+        .span6
+          h2 Wombat
+          p Wombat is a generic, multipurpose web crawler/scraper with a DSL that parses structured data from web pages. It is writtend in Ruby and fully tested with Rspec.
+          a.btn(href="http://felipecsl.github.com/wombat", target="_blank") 
+            i.icon-cog
+            | &nbsp;View project on GitHub
+      .row
+        .span6
+          h2 Random maze generator and solver
+          p This is a sample JavaScript app that generates random mazes and is able to find the shortest path out of it. It is also fully tested with Jasmine and employs some well known graph theory algorithms like depth-first search and A* search.
+          a.btn(href="http://felipecsl.github.com/random-maze-generator", target="_blank") 
+            i.icon-cog
+            | &nbsp;View project on GitHub
+        .span6
+          h2 CS-Exercises
+          p This is a growing collection of traditional Computer Science problems/questions that are popular in interview questions and exercise some CS concepts and fundamentals.
+          a.btn(href="http://github.com/felipecsl/cs-exercises", target="_blank") 
+            i.icon-cog
+            | &nbsp;View project on GitHub
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js')
+    script(src='nowjs/now.js')
+    script(src='/js/libs/bootstrap-dropdown.js')
+    //!script
+    //!  window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')
+    // scripts concatenated and minified via ant build script
+    script(defer='defer', src='js/plugins.js')
+    // end scripts
+    script
+      window._gaq = [['_setAccount','UA-26310657-1'],['_trackPageview'],['_trackPageLoadTime']];
+      Modernizr.load({
+        load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+      });

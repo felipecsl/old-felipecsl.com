@@ -3,14 +3,26 @@
 */
 
 $(function() {
-  $("#container")
+  $(".container")
     .draggable({ handle: ".filename"})
-    .resizable()
-    .css({ 
-      'left': '50%', 
-      'margin-left': - ($("#container").width() / 2),
-      'margin-top': '20px'
-    });
+    .resizable();
+
+  $('.container.vim').css({ 
+    'left': '50%', 
+    'margin-left': - ($(".container").width() / 2),
+    'margin-top': '50px'
+  });
+
+  $('.container.chrome').css({ 
+    'left': '30%', 
+    'margin-left': - ($(".container").width() / 3),
+    'margin-top': '10px'
+  });
+
+  $('.container .filename').click(function() {
+    $('.container').css('z-index', 1);
+    $(this).parent().parent().css('z-index', 2);
+  });
 
   var resizeTimeout = null;
 
@@ -18,8 +30,20 @@ $(function() {
     if(resizeTimeout) clearTimeout(resizeTimeout);
 
     resizeTimeout = setTimeout(function() {
-      $("#container").animate({ 
-        'margin-left': - ($("#container").width() / 2) 
+      $(".container.chrome").animate({ 
+        'margin-left': - ($(".container").width() / 3) 
+      }, 500);
+    }, 500);
+  });
+
+  var resizeVimTimeout = null;
+
+  $(window).resize(function() {
+    if(resizeVimTimeout) clearTimeout(resizeVimTimeout);
+
+    resizeVimTimeout = setTimeout(function() {
+      $(".container.vim").animate({ 
+        'margin-left': - ($(".container").width() / 2) 
       }, 500);
     }, 500);
   });
